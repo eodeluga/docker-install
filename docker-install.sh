@@ -16,6 +16,6 @@ echo \
 
 # Install docker-compose
 echo -e "\n#Add docker-compose to path\nexport DOCKER_CONFIG=\${DOCKER_CONFIG:-\$HOME/.docker}\nexport PATH=\"\$DOCKER_CONFIG/cli-plugins:\$PATH\"" | \
-  tee -a ~/.bashrc >> /dev/null
+  tee -a ~/.bashrc > /dev/null
 source ~/.bashrc
 source ./compose/docker-compose-install.sh
